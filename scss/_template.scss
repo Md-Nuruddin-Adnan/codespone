@@ -4,6 +4,17 @@
     position: relative;
     color: #fff;
     text-align: center;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .4);
+      z-index: 1;
+    }
     
 
     .search_slider{
@@ -50,7 +61,7 @@
         @extend .slide-1;
       }
     }
-
+ 
    .search_content_full{
      position: absolute;
      z-index: 999;
@@ -62,14 +73,18 @@
 
       h1{
         font-size: 38px;
-        text-shadow: 1px 6px 7px rgba(0,0,0,0.83);
+        // text-shadow: 1px 6px 5px rgba(0,0,0,0.83);
         font-family: fonts(secondary);
         margin-bottom: 8px;
       }
       h5{
         font-size: 22px;
        line-height: 34px;
-       text-shadow: 1px 6px 7px rgba(0,0,0,0.83);
+      //  text-shadow: 1px 6px 5px rgba(0,0,0,0.83);
+      }
+
+      p {
+        // text-shadow: 1px 3px 3px rgba(0,0,0,0.83);
       }
 
       .search_bar{
@@ -81,6 +96,8 @@
           border-radius: 25px;
           margin: 16px 0px;
           .input-group{
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 50px;
             .input-group-prepend{
               position: relative;
               &::before{
@@ -121,7 +138,7 @@
             &.form-control{
               border: none;
               min-height: 50px;
-              padding: 12px 8px;
+              padding: 12px 15px;
             }
           }
             .input-group-append{
@@ -169,17 +186,22 @@
 
 
 %filter_btn{
-  // overflow-x: scroll;
+  position: sticky;
+  top: 70px;
+  z-index: 990;
+  background: #fff;
+  padding: 20px 0;
+
   .btn-outline {
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 25px;
-    background: rgba(240, 240, 240, .3);
     transition: all 0.2s linear;
     margin: 0 5px;
-    
+    font-size: 16px;
+
     &.active,
     &:hover {
-      background: rgba(173, 179, 255, 0.4);
+      background: #f1f1f1;
     }
 
   }
@@ -201,16 +223,10 @@
       max-width: 80%;
     }
     .template_box {
-      -webkit-box-shadow: 1px 18px 46px -5px rgba(0,0,0,0.42);
-      -moz-box-shadow: 1px 18px 46px -5px rgba(0,0,0,0.42);
-      box-shadow: 1px 18px 46px -5px rgba(0,0,0,0.42);
       overflow: hidden;
       .template_img{
-        a {
-          // img{
-
-          // }
-        }
+        max-height: 200px;
+        overflow: hidden;
       }
       .template_text{
 
@@ -242,6 +258,10 @@
               text-decoration: none;
               color: hsl(0, 0%, 60%);
               font-weight: 500;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           
         }
@@ -263,7 +283,6 @@
              }
 
              .total_rating{
-               font-weight: bold;
                font-size: 13px;
              }
           }
@@ -303,6 +322,15 @@
             }
           }
         }
+
+        .btn-download {
+          color: color(primary);
+          border: 1px solid color(primary);
+
+          &:hover {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -327,16 +355,12 @@
 
           .page-item{
             &:hover {
-              z-index: 2;
               background-color:color(primary);
             }
-            &.active{
-              .page-link{
-                z-index: 2;
-                background-color: color(primary);
-                
-              }
+            .page-link{
+              color: #777;              
             }
+            
           }
         }
       }
@@ -626,3 +650,16 @@
 #similar{
   @extend %img_gallery;
 }
+
+
+
+// This is for responsive
+
+// .input-group-prepend {
+//   display: none;
+// }
+
+// .input-group>.form-control:not(:first-child) {
+//   border-top-left-radius: 25px;
+//   border-bottom-left-radius: 25px;
+// }
