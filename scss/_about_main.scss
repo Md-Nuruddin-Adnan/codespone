@@ -1,0 +1,65 @@
+%abt_bnr{
+  background: url("../images/About/bg_1.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+#About_banner{
+  @extend %abt_bnr;
+}
+
+  #counter {
+    
+    &.abt-counter{
+      background: #FDFAF6;
+
+
+    .counter-box{
+      background: #fff;
+      border: 2px solid transparent;
+
+      i, p {
+        color: #777;
+      }
+  
+      p.count.first {
+        color: #15bcec;
+      }
+      p.count.second {
+        color: #f5a416;
+      }
+      p.count.third {
+        color: #00c99c;
+      }
+      p.count.fourth {
+        color: #f12699;
+      }
+      
+      span {
+        background: #777;
+      }
+
+    }  
+  } 
+  
+}
+
+#our_goal{
+  @include section(80px,null,null);
+  .goal_content{
+    
+    .goal_content_details {
+      text-align: justify;
+      padding: 40px 0;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color:color(text_dark);
+    padding-bottom: 20px;
+  }
+}
