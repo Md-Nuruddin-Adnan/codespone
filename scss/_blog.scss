@@ -8,9 +8,12 @@
   }
   h3{
     a{
-      color: #384141;
-      font-weight: 300;
+      color: #444;
+      font-weight: 500;
     }
+  }
+  p {
+    color: #444;
   }
   .commment {
     li{
@@ -25,6 +28,19 @@
         font-size: 14px;
       }
     }
+  }
+
+}
+
+#pagination {
+  .page-link {
+    color: #777;
+    font-size: 16px;
+  }
+
+  .page-link.active, .page-link:hover {
+    color: #fff;
+    background: color(primary);
   }
 }
 
@@ -233,7 +249,6 @@
               border: 1px solid #ececec;
               -webkit-box-shadow: none;
               box-shadow: none;
-              height: 41px;
               color: #b6b8ba;
               font-size: 0.875rem;
               background:#fff;
@@ -298,7 +313,7 @@
             padding-left: 10px;
             font-size: 14px;
             a{
-              color: #384141;
+              color: #444;
             }
             &> a{
               font-weight: 600;
@@ -307,6 +322,7 @@
           span{
             font-size: 12px;
             display: block;
+            color: #6f6f6f;
           }
         }
 
@@ -317,20 +333,19 @@
           a{
             position: relative;
             margin-left: 15px;
-            color: #384141;
+            color: #6f6f6f;
+            font-size: 16px;
+
             &::before{
               content: '';
               position: absolute;
-              top: 5px;
+              top: 8px;
               left: -16px;
               background-color: color(primary);
               display: inline-block;
               width: 10px;
               height: 10px;
               border-radius: 50%;
-            }
-            span{
-
             }
           }
         }
@@ -348,6 +363,10 @@
             padding: 5px 1rem;
             border: 1px solid #ececec;
             display: block;
+
+            &:hover {
+              background: #f1f1f1;
+            }
           }
         }
       }

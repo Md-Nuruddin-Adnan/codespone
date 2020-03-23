@@ -1051,10 +1051,10 @@ img {
 .filter_btn {
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: 60px;
   z-index: 990;
   background: #fff;
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
 }
 
 .filter_btn .btn-outline {
@@ -1502,8 +1502,12 @@ img {
 }
 
 .blog-item h3 a, .blog-item h3 #footer-bg .p, #footer-bg .blog-item h3 .p, .blog-item h3 #footer-bg span, #footer-bg .blog-item h3 span, .blog-item #our-blog .container .news_item .news_desc h3 a:hover, #our-blog .container .news_item .news_desc .blog-item h3 a:hover {
-  color: #384141;
-  font-weight: 300;
+  color: #444;
+  font-weight: 500;
+}
+
+.blog-item p {
+  color: #444;
 }
 
 .blog-item .commment li {
@@ -1519,6 +1523,16 @@ img {
   display: block;
   color: #a5a5a5;
   font-size: 14px;
+}
+
+#pagination .page-link {
+  color: #777;
+  font-size: 16px;
+}
+
+#pagination .page-link.active, #pagination #generic_price_table .page-link.generic_content:hover, #generic_price_table #pagination .page-link.generic_content:hover, #pagination .page-link:hover {
+  color: #fff;
+  background: #6BA229;
 }
 
 #our-blog {
@@ -1715,7 +1729,6 @@ img {
   border: 1px solid #ececec;
   -webkit-box-shadow: none;
   box-shadow: none;
-  height: 41px;
   color: #b6b8ba;
   font-size: 0.875rem;
   background: #fff;
@@ -1777,7 +1790,7 @@ img {
 }
 
 #our-blog .container aside .widget .single_post .text a, #our-blog .container aside .widget .single_post .text #footer-bg .p, #footer-bg #our-blog .container aside .widget .single_post .text .p, #our-blog .container aside .widget .single_post .text #footer-bg span, #footer-bg #our-blog .container aside .widget .single_post .text span {
-  color: #384141;
+  color: #444;
 }
 
 #our-blog .container aside .widget .single_post .text > a, #our-blog .container aside .widget .single_post #footer-bg .text > .p, #footer-bg #our-blog .container aside .widget .single_post .text > .p, #our-blog .container aside .widget .single_post #footer-bg .text > span, #footer-bg #our-blog .container aside .widget .single_post .text > span, #our-blog .container aside .widget .single_post .news_item .news_desc h3 .text > a:hover {
@@ -1787,18 +1800,20 @@ img {
 #our-blog .container aside .widget .single_post span {
   font-size: 12px;
   display: block;
+  color: #6f6f6f;
 }
 
 #our-blog .container aside .webcats li a, #our-blog .container aside .webcats li #footer-bg .p, #footer-bg #our-blog .container aside .webcats li .p, #our-blog .container aside .webcats li #footer-bg span, #footer-bg #our-blog .container aside .webcats li span {
   position: relative;
   margin-left: 15px;
-  color: #384141;
+  color: #6f6f6f;
+  font-size: 16px;
 }
 
 #our-blog .container aside .webcats li a::before, #our-blog .container aside .webcats li #footer-bg .p::before, #footer-bg #our-blog .container aside .webcats li .p::before, #our-blog .container aside .webcats li #footer-bg span::before, #footer-bg #our-blog .container aside .webcats li span::before {
   content: '';
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: -16px;
   background-color: #6BA229;
   display: inline-block;
@@ -1820,6 +1835,10 @@ img {
   padding: 5px 1rem;
   border: 1px solid #ececec;
   display: block;
+}
+
+#our-blog .container aside .webtags li a:hover, #our-blog .container aside .webtags li #footer-bg .p:hover, #footer-bg #our-blog .container aside .webtags li .p:hover, #our-blog .container aside .webtags li #footer-bg span:hover, #footer-bg #our-blog .container aside .webtags li span:hover {
+  background: #f1f1f1;
 }
 
 /* blog End here */
