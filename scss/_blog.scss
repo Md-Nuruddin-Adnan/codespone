@@ -58,9 +58,6 @@
 
     .news_item{
       margin-bottom: 30px;
-      &.shadow{
-        box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.1);
-      }
 
       image{
         position: relative;
@@ -74,10 +71,11 @@
 
       .news_desc{
         padding: 40px 30px;
+        color: #444;
 
         h3{
-          color: #384141;
-          font-weight: normal;
+          color: #444;
+          font-weight: 500;
           text-transform: uppercase;
           a{
             outline: none;
@@ -97,10 +95,11 @@
               color: #a5a5a5;
               font-size: 12px;
               font-weight: 600;
+              margin-right: 7px;
               
               & > i{
                 font-size: 17px;
-                margin-right: 8px;
+                margin-right: 3px;
                 vertical-align: text-bottom;
                 &::before,
                 &::after{
@@ -114,15 +113,16 @@
         }
         p{
           margin-bottom: 35px;
+          color: #444;
         }
 
         blockquote{
           &.blockquote{
             font-style: italic;
-            color: #384141;
-            font-style: 18px;
-            margin-bottom: 56px;
-            
+            color: #222;
+            font-size: 22px;
+            margin-bottom: 40px;
+            font-weight: 300;
           }
           &::before{
             content: "\f10d";
@@ -137,9 +137,10 @@
         ul.rounded{
          
           li{
-            padding-left: 20px;
+            padding: 3px 0 3px 20px;
             position: relative;
-            // border-radius: ;
+            font-size: 18px;
+            color: #444;
             &::before{
                 position: absolute;
                 content: '';
@@ -149,8 +150,7 @@
                 margin-right: 10px;
                 margin-left: -20px;
                 border-radius: 50%;
-                top: 6px;
-                // left: ;
+                top: 12px;
               }
           }
         }
@@ -166,8 +166,8 @@
             margin-bottom: 30px;
             padding-bottom: 30px;
             .profile_photo{
-              height: 90px;
-              width: 90px;
+              height: 60px;
+              width: 60px;
               display: table-cell;
               vertical-align: middle;
               &>img{
@@ -182,7 +182,7 @@
               padding-right: 10px;
 
               h5{
-                color: #384141;
+                color: #444;
                 margin-bottom: 8px;
                 font-size: 16px;
                 a{
@@ -198,6 +198,10 @@
                 right: 0px;
                 font-size: 14px;
                 color: #808080;
+              }
+              p {
+                font-size: 14px;
+                line-height: 24px;
               }
             }
         }
@@ -249,7 +253,7 @@
               border: 1px solid #ececec;
               -webkit-box-shadow: none;
               box-shadow: none;
-              color: #b6b8ba;
+              color: #666;
               font-size: 0.875rem;
               background:#fff;
               position: relative;
@@ -276,7 +280,6 @@
             -webkit-box-shadow: none;
             box-shadow: none;
             display: table-cell;
-              width: 214px; 
               /* margin-right: 40px; */
               -webkit-border-bottom-left-radius: 20px !important;
               border-bottom-left-radius: 20px !important;

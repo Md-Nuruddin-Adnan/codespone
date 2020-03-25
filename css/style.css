@@ -1545,11 +1545,6 @@ img {
   margin-bottom: 30px;
 }
 
-#our-blog .container .news_item.shadow {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
 #our-blog .container .news_item image {
   position: relative;
   overflow: hidden;
@@ -1562,11 +1557,12 @@ img {
 
 #our-blog .container .news_item .news_desc {
   padding: 40px 30px;
+  color: #444;
 }
 
 #our-blog .container .news_item .news_desc h3 {
-  color: #384141;
-  font-weight: normal;
+  color: #444;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -1588,11 +1584,12 @@ img {
   color: #a5a5a5;
   font-size: 12px;
   font-weight: 600;
+  margin-right: 7px;
 }
 
 #our-blog .container .news_item .news_desc ul li a > i, #our-blog .container .news_item .news_desc ul li #footer-bg .p > i, #footer-bg #our-blog .container .news_item .news_desc ul li .p > i, #our-blog .container .news_item .news_desc ul li #footer-bg span > i, #footer-bg #our-blog .container .news_item .news_desc ul li span > i, #our-blog .container .news_item .news_desc ul li h3 a:hover > i {
   font-size: 17px;
-  margin-right: 8px;
+  margin-right: 3px;
   vertical-align: text-bottom;
 }
 
@@ -1603,13 +1600,15 @@ img {
 
 #our-blog .container .news_item .news_desc p {
   margin-bottom: 35px;
+  color: #444;
 }
 
 #our-blog .container .news_item .news_desc blockquote.blockquote {
   font-style: italic;
-  color: #384141;
-  font-style: 18px;
-  margin-bottom: 56px;
+  color: #222;
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
 #our-blog .container .news_item .news_desc blockquote::before {
@@ -1623,8 +1622,10 @@ img {
 }
 
 #our-blog .container .news_item .news_desc ul.rounded li {
-  padding-left: 20px;
+  padding: 3px 0 3px 20px;
   position: relative;
+  font-size: 18px;
+  color: #444;
 }
 
 #our-blog .container .news_item .news_desc ul.rounded li::before {
@@ -1636,7 +1637,7 @@ img {
   margin-right: 10px;
   margin-left: -20px;
   border-radius: 50%;
-  top: 6px;
+  top: 12px;
 }
 
 #our-blog .container .news_item .news_desc .profile-authors h4 {
@@ -1652,8 +1653,8 @@ img {
 }
 
 #our-blog .container .news_item .news_desc .profile-authors .eny_profile .profile_photo {
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -1671,7 +1672,7 @@ img {
 }
 
 #our-blog .container .news_item .news_desc .profile-authors .eny_profile .profile_text h5 {
-  color: #384141;
+  color: #444;
   margin-bottom: 8px;
   font-size: 16px;
 }
@@ -1688,6 +1689,11 @@ img {
   right: 0px;
   font-size: 14px;
   color: #808080;
+}
+
+#our-blog .container .news_item .news_desc .profile-authors .eny_profile .profile_text p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 #our-blog .container .news_item .news_desc .post-comment h4 {
@@ -1729,7 +1735,7 @@ img {
   border: 1px solid #ececec;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #b6b8ba;
+  color: #666;
   font-size: 0.875rem;
   background: #fff;
   position: relative;
@@ -1751,7 +1757,6 @@ img {
   -webkit-box-shadow: none;
   box-shadow: none;
   display: table-cell;
-  width: 214px;
   /* margin-right: 40px; */
   border-bottom-left-radius: 20px !important;
   border-top-left-radius: 20px !important;
@@ -2029,6 +2034,14 @@ img {
   position: relative;
   z-index: 1;
   border: 1px solid #7c7c7c;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#contact .container .contact-meta .social-icons li a:hover, #contact .container .contact-meta .social-icons li #footer-bg .p:hover, #footer-bg #contact .container .contact-meta .social-icons li .p:hover, #contact .container .contact-meta .social-icons li #footer-bg span:hover, #footer-bg #contact .container .contact-meta .social-icons li span:hover {
+  background: #6BA229;
+  color: #fff;
+  border: 1px solid transparent;
 }
 
 #contact .container .heading-title .getin_form .form-group label {
@@ -2048,21 +2061,20 @@ img {
 #contact .container .heading-title .getin_form .form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
-  height: 41px;
-  color: #b6b8ba;
+  color: #444;
   font-size: 0.875rem;
   border: 1px solid #ececec;
-}
-
-#contact .container .heading-title .getin_form .form-control#message1 {
-  min-height: 250px;
 }
 
 #contact .container.whitebox .widget {
   background: #fff;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
+  padding: 40px 15px;
+  min-height: 200px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 #contact .container.whitebox .widget .contact-box .icon-contact {
