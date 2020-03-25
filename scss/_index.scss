@@ -701,6 +701,11 @@
 // Footer
 %footer{
   @include section(80px,null,color(quaternary_bg));
+
+  .top-footer {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 30px;
+  }
   
   a{
     color: lighten(#000000, 70%);
@@ -713,17 +718,30 @@
   }
   .lang{
     a{
+      font-size: 16px;
+      font-weight: 500;
+      padding-bottom: 15px;
       .icon{
-        font-size: 26px;
-        margin-bottom: 5px;
+        font-size: 18px;
+        padding-right: 5px;
+        color: #fff;
       }
+    }
+
+    .dropdown-item {
+      color: #444;
     }
   }
 
   .support{
+   
     a{
+      font-size: 16px;
+      font-weight: 500;
       .support-icon{
-        font-size: 26px;
+        font-size: 18px;
+        padding-right: 7px;
+        color: #fff;
       }
     }
   }
@@ -735,39 +753,56 @@
   }
 
   .title-content{
-    color: lighten($color: #000000, $amount: 50%);
-    font-size: 13px;
+    // color: lighten($color: #000000, $amount: 70%);
+    font-size: 14px;
 
     ul{
       margin-top: 12px;
       li{
+        padding: 3px 0;
         a{
+          color: #BEC0C2;
+          transition: all 0.2s  linear;
           &:hover{
             text-decoration: underline;
+            color: #fff;
           }
         }
       }
     }
     .social-links{
       li{
-        margin: 0 auto;
         a{
-          margin-left: 0;
-          i{
-            font-size: 26px;
+          font-size: 20px;
+          color: #fff;
+          margin-right: 15px;
+
+          &:hover {
+            color: color(primary);
           }
         }
       }
     }
   }
 
-  .reg-number{
-    color: lighten($color: #000000, $amount: 100%);
-  }
+  .bottom-footer {
+      font-size: 18px;
+    
+    .reg-number{
+      color: lighten($color: #000000, $amount: 100%);
+    }
+  
+    .post-number {
+      @extend .reg-number;
+    }
 
-  .post-number {
-    @extend .reg-number;
+    p {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
   }
+ 
 }
 #footer-bg{
   @extend %footer;

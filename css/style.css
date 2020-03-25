@@ -776,17 +776,40 @@ img {
   background-color: #181A2D;
 }
 
+#footer-bg .top-footer {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 30px;
+}
+
 #footer-bg a, #footer-bg .p, #footer-bg span {
   color: #b3b3b3;
 }
 
+#footer-bg .lang a, #footer-bg .lang .p, #footer-bg .lang span {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
 #footer-bg .lang a .icon, #footer-bg .lang .p .icon, #footer-bg .lang span .icon {
-  font-size: 26px;
-  margin-bottom: 5px;
+  font-size: 18px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+#footer-bg .lang .dropdown-item {
+  color: #444;
+}
+
+#footer-bg .support a, #footer-bg .support .p, #footer-bg .support span {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #footer-bg .support a .support-icon, #footer-bg .support .p .support-icon, #footer-bg .support span .support-icon {
-  font-size: 26px;
+  font-size: 18px;
+  padding-right: 7px;
+  color: #fff;
 }
 
 #footer-bg .f-title {
@@ -796,32 +819,50 @@ img {
 }
 
 #footer-bg .title-content {
-  color: gray;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #footer-bg .title-content ul {
   margin-top: 12px;
 }
 
-#footer-bg .title-content ul li a:hover, #footer-bg .title-content ul li .p:hover, #footer-bg .title-content ul li span:hover {
-  text-decoration: underline;
+#footer-bg .title-content ul li {
+  padding: 3px 0;
 }
 
-#footer-bg .title-content .social-links li {
-  margin: 0 auto;
+#footer-bg .title-content ul li a, #footer-bg .title-content ul li .p, #footer-bg .title-content ul li span {
+  color: #BEC0C2;
+  -webkit-transition: all 0.2s  linear;
+  transition: all 0.2s  linear;
+}
+
+#footer-bg .title-content ul li a:hover, #footer-bg .title-content ul li .p:hover, #footer-bg .title-content ul li span:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 #footer-bg .title-content .social-links li a, #footer-bg .title-content .social-links li .p, #footer-bg .title-content .social-links li span {
-  margin-left: 0;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 15px;
 }
 
-#footer-bg .title-content .social-links li a i, #footer-bg .title-content .social-links li .p i, #footer-bg .title-content .social-links li span i {
-  font-size: 26px;
+#footer-bg .title-content .social-links li a:hover, #footer-bg .title-content .social-links li .p:hover, #footer-bg .title-content .social-links li span:hover {
+  color: #6BA229;
 }
 
-#footer-bg .reg-number, #footer-bg .post-number {
+#footer-bg .bottom-footer {
+  font-size: 18px;
+}
+
+#footer-bg .bottom-footer .reg-number, #footer-bg .bottom-footer .post-number {
   color: white;
+}
+
+#footer-bg .bottom-footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 /*// End of Home css start here */

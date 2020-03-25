@@ -257,19 +257,26 @@
 <!-- === footer section start === -->
 <footer id="footer-bg" class="position-relative">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row top-footer">
+      <div class="col-md-5">
        <div class="row">
          <div class="brand-logo col-12 mb-3"><img src="images/logo-white.png" alt="" class="w-50"></div>
          <div class="lang col-12">
-           <a href="#">
-             <span class="icon"><i class="fas fa-globe"></i></span>
-             English - US (International)
-           </a>
+           <div class="dropdown d-flex align-items-center">
+            <a class="dropdown-toggle text-white" type="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="icon"><i class="far fa-globe"></i></span>
+              English - US (International)
+            </a>
+            <div class="dropdown-menu" aria-labelledby="language">
+              <a class="dropdown-item" href="#"> English - US (International)</a>
+              <a class="dropdown-item" href="#">Bangla</a>
+            </div>
+          </div>
+
          </div>
          <div class="col-12 support">
-           <a href="#">
-             <span class="support-icon"><i class="far fa-question-circle"></i></span>
+           <a href="#" class="text-white d-flex align-items-center">
+             <span class="support-icon"><i class="fas fa-question-circle"></i></span>
              Help & Support
            </a>
          </div>
@@ -306,7 +313,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3">
         <h5 class="f-title">Terms</h5>
         <div class="title-content">
           <ul class="title-content-links">
@@ -327,7 +334,7 @@
       </div>
     </div>
     <!-- Bootom Footer -->
-    <div class="row mt-5">
+    <div class="row mt-5 bottom-footer">
       <div class="col-md-3">
         <div class="reg-content d-flex">
           <div class="reg-number mr-2">44583</div>
@@ -341,7 +348,10 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae corrupti rem veritatis, error quae.</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae corrupti rem veritatis, error quae.</p>
+        <div class="copyrig">
+        <p>Copyright © 2020 codespone Limited (ACN 142 189 759)</p>
+        </div>
       </div>
     </div>
   </div>
