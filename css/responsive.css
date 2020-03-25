@@ -44,7 +44,9 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
+  .template.template_similar .container{
+    max-width: 1140px;   
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
