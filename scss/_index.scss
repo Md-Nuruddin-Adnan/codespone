@@ -562,10 +562,7 @@
       }
   
       & > a{
-        border-bottom: 1px solid #333;
         color: lighten($color: #000000, $amount: 100%);
-        // float: right;
-        // font-family: lato;
         font-size: 12px;
         font-weight: 600;
         line-height: 22px;
@@ -798,8 +795,9 @@
 
     p {
       color: #fff;
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 15px;
+      font-weight: 300;
     }
   }
  

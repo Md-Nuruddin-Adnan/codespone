@@ -125,18 +125,19 @@ img {
 .primary_btn {
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
   display: inline-block;
   text-decoration: none;
   -webkit-transition: background-color .1s linear;
   transition: background-color .1s linear;
   background-color: #6BA229;
   padding: 11px 30px;
+  text-align: center;
 }
 
 .primary_btn:hover, .primary_btn:focus, .primary_btn:active {
   background-color: #6d9837;
-  color: #fff;
+  color: #fff !important;
   outline: none;
 }
 
@@ -648,7 +649,6 @@ img {
 }
 
 #blog .single-blog .blog-text > a, #blog .single-blog #footer-bg .blog-text > .p, #footer-bg #blog .single-blog .blog-text > .p, #blog .single-blog #footer-bg .blog-text > span, #footer-bg #blog .single-blog .blog-text > span, #blog .single-blog #our-blog .container .news_item .news_desc h3 .blog-text > a:hover {
-  border-bottom: 1px solid #333;
   color: white;
   font-size: 12px;
   font-weight: 600;
@@ -861,8 +861,9 @@ img {
 
 #footer-bg .bottom-footer p {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
+  font-weight: 300;
 }
 
 /*// End of Home css start here */
@@ -1359,7 +1360,7 @@ img {
 #preview .preview_box .preview_item .preview_btn-social .btn-group .btn--group-item {
   border-radius: 0;
   margin-right: 3px;
-  padding: 5px 10px;
+  padding: 8px 10px;
 }
 
 #preview .preview_box .preview_item .preview_btn-social .btn-group .btn--group-item:first-child {
@@ -1399,9 +1400,11 @@ img {
 }
 
 #preview .authors_details h3 {
-  font-size: 16px;
-  margin: 10px 0px;
-  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: 600;
+  color: #555;
+  line-height: 30px;
 }
 
 #preview .authors_details .author_by .author_img img {
@@ -1416,11 +1419,35 @@ img {
 }
 
 #preview .authors_details .author_by .by span {
-  font-weight: 900;
+  font-weight: 800;
+  color: #555;
+}
+
+#preview .template-description p {
+  color: #555;
+}
+
+#preview .template-description ul li {
+  padding: 3px 0 3px 20px;
+  position: relative;
+  font-size: 18px;
+  color: #444;
+}
+
+#preview .template-description ul li::before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #6BA229;
+  margin-right: 10px;
+  margin-left: -20px;
+  border-radius: 50%;
+  top: 12px;
 }
 
 #preview .log_in_form {
-  padding: 15px 35px;
+  padding: 15px 30px;
 }
 
 #preview .log_in_form h3 {
@@ -1464,9 +1491,155 @@ img {
   font-size: 12px;
 }
 
+#preview .card.download {
+  padding: 15px 30px;
+  background: #fafafa;
+  color: #666;
+}
+
+#preview .card.download h3 span {
+  font-size: 35px;
+  padding: 0 20px;
+}
+
+#preview .card.rating_box .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+#preview .card.rating_box .rating-0 {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#preview .card.rating_box .rating > input {
+  display: none;
+}
+
+#preview .card.rating_box .rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#preview .card.rating_box .rating > input:checked ~ label,
+#preview .card.rating_box .rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+#preview .card.rating_box .rating > input:not(:checked) ~ label:hover,
+#preview .card.rating_box .rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+#preview .card.rating_box .emoji-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#preview .card.rating_box .emoji-wrapper:before,
+#preview .card.rating_box .emoji-wrapper:after {
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+#preview .card.rating_box .emoji-wrapper:before {
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(35%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white 0%, white 35%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+#preview .card.rating_box .emoji-wrapper:after {
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(35%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, white 0%, white 35%, rgba(255, 255, 255, 0) 100%);
+}
+
+#preview .card.rating_box .emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#preview .card.rating_box .emoji > svg {
+  margin: 15px 0;
+  width: 70px;
+  height: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#preview .card.rating_box #rating-1:checked ~ .emoji-wrapper > .emoji {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#preview .card.rating_box #rating-2:checked ~ .emoji-wrapper > .emoji {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+}
+
+#preview .card.rating_box #rating-3:checked ~ .emoji-wrapper > .emoji {
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+}
+
+#preview .card.rating_box #rating-4:checked ~ .emoji-wrapper > .emoji {
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+#preview .card.rating_box #rating-5:checked ~ .emoji-wrapper > .emoji {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+}
+
+#preview h6 {
+  color: #6BA229;
+}
+
 #Keyword {
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-top: 0;
 }
 
 #Keyword .webtags li {
@@ -1482,6 +1655,12 @@ img {
   padding: 5px 1rem;
   border: 1px solid #ececec;
   display: block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#Keyword .webtags li a:hover, #Keyword .webtags li #footer-bg .p:hover, #footer-bg #Keyword .webtags li .p:hover, #Keyword .webtags li #footer-bg span:hover, #footer-bg #Keyword .webtags li span:hover {
+  background: #f1f1f1;
 }
 
 #similar {
