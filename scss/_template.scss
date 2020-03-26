@@ -224,6 +224,13 @@
     }
     .template_box {
       overflow: hidden;
+      transition: all 0.2s linear;
+      
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.35)!important;
+      }
       .template_img{
         max-height: 200px;
         overflow: hidden;
@@ -503,7 +510,7 @@
             font-size: 16px;
             position: relative;
             text-decoration: none;
-            padding: 5px 10px 5px 36px;
+            padding: 5px 15px;
             border-radius: 4px;
             line-height: 30px;
             overflow: hidden;

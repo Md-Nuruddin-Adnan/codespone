@@ -293,6 +293,10 @@ img {
 
 #service .service-box:hover {
   border-bottom: 5px solid #6BA229;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
 }
 
 #service .service-box h2 {
@@ -571,6 +575,7 @@ img {
   padding-bottom: 15px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  border-radius: 5px;
 }
 
 #blog .single-blog:hover {
@@ -930,6 +935,117 @@ img {
 }
 
 /* About Section End here */
+/* About Section start here */
+#Service_banner {
+  background: url("../images/service/service_banner.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#Service_banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#working_steps {
+  background: #FDFAF6;
+  padding: 80px 0 50px 0;
+}
+
+#working_steps .steps-box {
+  background: #fff;
+  border: 2px solid transparent;
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+#working_steps .steps-box i {
+  color: #777777;
+  font-size: 36px;
+}
+
+#working_steps .steps-box .steps {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px 0 15px 0;
+}
+
+#working_steps .steps-box .steps.first {
+  color: #15bcec;
+}
+
+#working_steps .steps-box .steps.second {
+  color: #f5a416;
+}
+
+#working_steps .steps-box .steps.third {
+  color: #00c99c;
+}
+
+#working_steps .steps-box .steps.fourth {
+  color: #f12699;
+}
+
+#working_steps .steps-box span {
+  width: 80px;
+  background: #777;
+  height: 5px;
+  display: block;
+  margin: 10px auto;
+}
+
+#working_steps .steps-box p {
+  color: #777;
+}
+
+#our_goal {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#our_goal .goal_content .goal_content_details {
+  text-align: justify;
+  padding: 40px 0;
+}
+
+#our_goal h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #181a2d;
+  padding-bottom: 20px;
+}
+
+#service.related_service {
+  padding-top: 0;
+}
+
+/* About Section End here */
 /* Template page start here */
 #search_banner {
   position: relative;
@@ -1121,6 +1237,15 @@ img {
 
 .template .container .template_box {
   overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.template .container .template_box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
 }
 
 .template .container .template_box .template_img {
@@ -1378,7 +1503,7 @@ img {
   font-size: 16px;
   position: relative;
   text-decoration: none;
-  padding: 5px 10px 5px 36px;
+  padding: 5px 15px;
   border-radius: 4px;
   line-height: 30px;
   overflow: hidden;

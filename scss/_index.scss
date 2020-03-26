@@ -183,6 +183,8 @@
 
       &:hover {
         border-bottom: 5px solid color(primary);
+        transform: translateY(-10px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.35)!important;
       }
 
       h2{
@@ -495,6 +497,7 @@
     overflow: hidden;
     padding-bottom: 15px;
     transition: all 0.3s ease 0s;
+    border-radius: 5px;
     
     &:hover {
       box-shadow: 0 8px 16px 1px #ccc;
