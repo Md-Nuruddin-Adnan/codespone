@@ -295,7 +295,7 @@
 
         .right{
           & a:nth-child(1){
-            height: 40px;
+            // height: 40px;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-align: center;
@@ -308,7 +308,7 @@
             -ms-flex-preferred-size: auto;
             flex-basis: auto;
             text-decoration: none;
-            padding: 7px 16px;
+            padding: 5px 16px;
             color: hsl(0, 0%, 40%);
             &:hover{
               background-color: gray;
