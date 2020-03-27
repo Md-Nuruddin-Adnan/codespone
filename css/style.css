@@ -565,8 +565,25 @@ img {
   }
 }
 
+#happy_customer {
+  padding: 80px 0;
+  background: url("../images/home_banner/parallax-four.jpg") no-repeat bottom center/cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#happy_customer h2 strong {
+  color: #ffd119;
+  font-size: 60px;
+}
+
+#happy_customer i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
 #blog {
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 #blog .single-blog {
@@ -2437,5 +2454,312 @@ img {
 }
 
 /* contact End here */
+/* faq start here */
+#Faq_banner {
+  background: url("../images/service/service_banner.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#Faq_banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#faq_section_id {
+  background: #fdfdfd;
+  padding: 10vh 0;
+}
+
+#faq_section_id .faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#faq_section_id .faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #E91E63;
+  bottom: -25px;
+  margin-left: -30px;
+}
+
+#faq_section_id .faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+#faq_section_id .faq {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+#faq_section_id .faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+#faq_section_id .faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#faq_section_id .faq .card .card-header:hover {
+  background: rgba(107, 162, 41, 0.1);
+  padding-left: 10px;
+}
+
+#faq_section_id .faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #6d9837;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#faq_section_id .faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  border-radius: 100px;
+  text-align: center;
+  background: #6BA229;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+#faq_section_id .faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+#faq_section_id .faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  #faq_section_id .faq {
+    margin-bottom: 30px;
+  }
+  #faq_section_id .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+/* faq End here */
+/* privacy_policy start here */
+#Pricacy_policy_banner {
+  background: url("../images/service/service_banner.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#Pricacy_policy_banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-privacy {
+  /* === table part start === */
+  /* ===//end of table part === */
+}
+
+.main-privacy h2 {
+  font-size: 22px;
+  color: #181a2d;
+  font-weight: 800;
+  margin: 0 0 25px 0;
+  opacity: 0.8;
+}
+
+.main-privacy p {
+  font-size: 16px;
+  color: #666;
+}
+
+.main-privacy .blue-box {
+  width: 20px;
+  height: 20px;
+  background: #6BA229;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-right: 20px;
+  margin-right: 20px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+.main-privacy .link {
+  color: #2794d7;
+  font-size: 16px;
+}
+
+.main-privacy .bg-transparent {
+  background: transparent !important;
+}
+
+.main-privacy .use-table .heading {
+  background: #2794d7;
+  border-radius: 10px;
+}
+
+.main-privacy .use-table .heading span {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  /* padding: .75rem; */
+}
+
+.main-privacy .use-table {
+  border: 3px solid #2794d7;
+  border-radius: 25px !important;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-bottom: 0px solid transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.main-privacy .use-table::before {
+  width: 3px;
+  height: 100%;
+  background: #2794d7;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-privacy .use-table .row {
+  -webkit-border-bottom-right-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-bottomright: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 3px solid #2794d7;
+  border-top: 3px solid transparent;
+  margin: 0 -3px;
+  padding: 15px 5px;
+}
+
+/* privacy_policy End here */
+/* terms_condition start here */
+#terms_condition_banner {
+  background: url("../images/service/service_banner.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#terms_condition_banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-terms_condition h2 {
+  font-size: 22px;
+  color: #181a2d;
+  font-weight: 800;
+  margin: 0 0 25px 0;
+  opacity: 0.8;
+}
+
+.main-terms_condition p {
+  font-size: 16px;
+  color: #666;
+}
+
+.main-terms_condition .blue-box {
+  width: 20px;
+  height: 20px;
+  background: #6BA229;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-right: 20px;
+  margin-right: 20px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+.main-terms_condition .link {
+  color: #2794d7;
+  font-size: 16px;
+}
+
+.main-terms_condition .bg-transparent {
+  background: transparent !important;
+}
+
+/* terms_condition End here */
 /* ? start here */
 /* ? End here */

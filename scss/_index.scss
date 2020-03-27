@@ -156,11 +156,6 @@
 
 
 
-
-
-
-
-
 // Service
 %box{
     // section padd
@@ -486,11 +481,35 @@
 	
 }
 
-// /*PRICE BODY CODE START*/
+// /*PRICE BODY CODE END*/
+
+// Happy customer start
+
+#happy_customer {
+  padding: 80px 0;
+  background: url('../images/home_banner/parallax-four.jpg') no-repeat bottom center/cover;
+  background-attachment: fixed;
+  color: #fff;
+
+  h2 strong {
+    color: #ffd119;
+    font-size: 60px;
+  }
+
+  i {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+}
+  
+  
+
+
+// Happy customer end
 
 // Blogs start 
 #blog{
-  padding-bottom: 80px;
+  padding: 80px 0;
   
   .single-blog {
     border: 1px solid #efefef;
