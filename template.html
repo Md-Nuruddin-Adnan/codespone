@@ -568,18 +568,23 @@
 
 
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<!-- <script src="js/typed.min.js"></script> -->
-<script src="js/parallax.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <!-- <script src="js/typed.min.js"></script> -->
+  <script src="js/parallax.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
   <script>
+     $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);
+
+   
   </script>
   <script src="js/custom.js"></script>
 </body>
