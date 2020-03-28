@@ -41,6 +41,10 @@
     // logo
     .navbar-brand{
       max-width: 200px;
+
+      @include mobile {
+        max-width: 180px;
+      }
    }
    
    .navbar-collapse{
@@ -109,6 +113,11 @@
   display: grid;
   place-items: center;
 
+  @include mobile {
+    padding: 40px 0;
+    height: 70vh;
+  }
+
 
   %banner_content{
     %paragraph{
@@ -117,7 +126,14 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 30px;
-      text-align: justify;
+      // text-align: justify;
+
+      @include mobile {
+        font-size: 16px;
+        text-align: left;
+        line-height: 24px;
+        padding: 15px 0px 20px 0;
+      }
     }
   }
 
@@ -160,6 +176,9 @@
 %box{
     // section padd
     @include section(80px,null,null);
+    @include mobile {
+      padding: 40px 0;
+    }
     .row{
       &>div{
         margin: 0 0 30px;
@@ -176,6 +195,10 @@
       border-bottom: 5px solid transparent;
       transition: all 0.2s linear;
 
+      @include mobile {
+        padding: 30px 15px;
+      }
+
       &:hover {
         border-bottom: 5px solid color(primary);
         transform: translateY(-10px);
@@ -188,6 +211,10 @@
         font-weight: 600;
         line-height: 1;
         margin: 0 0 35px;
+
+        @include mobile {
+          margin: 0 0 20px;
+        }
       }
       .service_icon i{
         font-size: 50px;
@@ -199,6 +226,10 @@
         color: #4d5868;
         line-height: 25px;
         margin: 30px 0 0;
+
+        @include mobile {
+          margin: 20px 0 0;
+        }
       }
     }
 }
@@ -211,6 +242,10 @@
 #About-us{
   @include section(80px,null,null);
   padding-top: 0;
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
 }
 
 
@@ -244,6 +279,11 @@
             overflow: hidden;
             border: none;
             font-weight:600;
+
+            @include mobile {
+              font-size: 14px;
+            }
+
             &:hover,&:focus{
               text-decoration: none;
             }
@@ -256,6 +296,10 @@
               -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
               font-family: "Font Awesome 5 Pro";
+
+              @include mobile {
+                right: 10px
+              }
             }
 
             &.collapsed{
@@ -491,15 +535,31 @@
   background-attachment: fixed;
   color: #fff;
 
+  @include mobile {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+
   h2 strong {
     color: #ffd119;
     font-size: 60px;
+
+    @include mobile {
+      font-size: 35px;
+    }
   }
 
   i {
     font-size: 40px;
     margin-bottom: 15px;
   }
+
 }
   
   
@@ -605,6 +665,10 @@
 %counter{
   @include section(80px,null,color(quaternary_bg));
 
+  @include mobile {
+    padding: 40px 0;
+  }
+
   .counter-box{
     // width: 200px;
     // height: 200px;
@@ -622,6 +686,11 @@
       font-size: 35px;
       font-weight: bold;
       padding: 25px 0 15px 0;
+
+      @include mobile {
+        font-size: 25px;
+        padding: 15px 0;
+      }
     }
     i {
       font-size: 36px;
@@ -660,6 +729,11 @@
 // Email Newslatter
 %mail{
   @include section(80px,null,null);
+
+  @include mobile {
+    padding: 40px 0;
+  }
+  
   .portable-form{
     max-width: 650px;
     margin: 0 auto;

@@ -1,6 +1,10 @@
 h1 {
   font-size: 55px;
   font-weight: 600;
+
+  @include mobile {
+    font-size: 35px;
+  }
 }
 
 h3 {
@@ -98,10 +102,19 @@ img{
   font-size: 40px;
   color: #181a2d;
   font-weight: 600;
+
+  @include mobile {
+    font-size: 30px;
+  }
   }
   span{
     color: #666;
     font-size: 16px;
     line-height: 1.4;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 1;
+    }
   }
 }

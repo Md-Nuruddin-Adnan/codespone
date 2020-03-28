@@ -44,6 +44,12 @@ h1 {
   font-weight: 600;
 }
 
+@media (max-width: 575px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
 h3 {
   font-size: 20px;
 }
@@ -147,10 +153,23 @@ img {
   font-weight: 600;
 }
 
+@media (max-width: 575px) {
+  .s-heading h2 {
+    font-size: 30px;
+  }
+}
+
 .s-heading span {
   color: #666;
   font-size: 16px;
   line-height: 1.4;
+}
+
+@media (max-width: 575px) {
+  .s-heading span {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
 
 /* common css End here */
@@ -203,6 +222,12 @@ img {
   max-width: 200px;
 }
 
+@media (max-width: 575px) {
+  .header .navbar .navbar-brand {
+    max-width: 180px;
+  }
+}
+
 .header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   color: #fff;
@@ -249,12 +274,27 @@ img {
   place-items: center;
 }
 
+@media (max-width: 575px) {
+  .banner {
+    padding: 40px 0;
+    height: 70vh;
+  }
+}
+
 .banner .banner-content p {
   padding: 15px 0px 40px 0;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  text-align: justify;
+}
+
+@media (max-width: 575px) {
+  .banner .banner-content p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+    padding: 15px 0px 20px 0;
+  }
 }
 
 .banner .bg-parallax {
@@ -274,6 +314,12 @@ img {
   padding-bottom: 80px;
 }
 
+@media (max-width: 575px) {
+  #service {
+    padding: 40px 0;
+  }
+}
+
 #service .row > div {
   margin: 0 0 30px;
 }
@@ -289,6 +335,12 @@ img {
   border-bottom: 5px solid transparent;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+@media (max-width: 575px) {
+  #service .service-box {
+    padding: 30px 15px;
+  }
 }
 
 #service .service-box:hover {
@@ -307,6 +359,12 @@ img {
   margin: 0 0 35px;
 }
 
+@media (max-width: 575px) {
+  #service .service-box h2 {
+    margin: 0 0 20px;
+  }
+}
+
 #service .service-box .service_icon i {
   font-size: 50px;
   color: #6BA229;
@@ -319,10 +377,22 @@ img {
   margin: 30px 0 0;
 }
 
+@media (max-width: 575px) {
+  #service .service-box p {
+    margin: 20px 0 0;
+  }
+}
+
 #About-us {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-top: 0;
+}
+
+@media (max-width: 575px) {
+  #About-us {
+    padding-bottom: 40px;
+  }
 }
 
 .our-faq-wrapper {
@@ -356,6 +426,12 @@ img {
   font-weight: 600;
 }
 
+@media (max-width: 575px) {
+  .our-faq-wrapper .accordion .card .card-header h5 .btn-link {
+    font-size: 14px;
+  }
+}
+
 .our-faq-wrapper .accordion .card .card-header h5 .btn-link:hover, .our-faq-wrapper .accordion .card .card-header h5 .btn-link:focus {
   text-decoration: none;
 }
@@ -368,6 +444,12 @@ img {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-family: "Font Awesome 5 Pro";
+}
+
+@media (max-width: 575px) {
+  .our-faq-wrapper .accordion .card .card-header h5 .btn-link::after {
+    right: 10px;
+  }
 }
 
 .our-faq-wrapper .accordion .card .card-header h5 .btn-link.collapsed::after {
@@ -572,9 +654,25 @@ img {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  #happy_customer h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #happy_customer h4 {
+    font-size: 1.2rem;
+  }
+}
+
 #happy_customer h2 strong {
   color: #ffd119;
   font-size: 60px;
+}
+
+@media (max-width: 575px) {
+  #happy_customer h2 strong {
+    font-size: 35px;
+  }
 }
 
 #happy_customer i {
@@ -680,6 +778,12 @@ img {
   background-color: #181A2D;
 }
 
+@media (max-width: 575px) {
+  #counter {
+    padding: 40px 0;
+  }
+}
+
 #counter .counter-box {
   padding: 30px 0px;
   display: -webkit-box;
@@ -704,6 +808,13 @@ img {
   font-size: 35px;
   font-weight: bold;
   padding: 25px 0 15px 0;
+}
+
+@media (max-width: 575px) {
+  #counter .counter-box p.count {
+    font-size: 25px;
+    padding: 15px 0;
+  }
 }
 
 #counter .counter-box i {
@@ -735,6 +846,12 @@ img {
 #email {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+@media (max-width: 575px) {
+  #email {
+    padding: 40px 0;
+  }
 }
 
 #email .portable-form {
