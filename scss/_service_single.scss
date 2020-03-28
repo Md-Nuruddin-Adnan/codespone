@@ -6,6 +6,10 @@
   align-items: center;
   z-index: 1;
 
+  @include mobile {
+    min-height: 250px;
+  }
+
   &::before {
     content: '';
     width: 100%;
@@ -27,10 +31,12 @@
   background: #FDFAF6;
   padding: 80px 0 50px 0;
 
+  @include mobile {
+    padding: 40px 0;
+  }
   .steps-box {
     background: #fff;
     border: 2px solid transparent;
-
     padding: 30px 0px;
     display: flex;
     -webkit-box-align: center;
@@ -46,6 +52,10 @@
     border-radius: 25px;
     margin-bottom: 30px;
 
+    @include mobile {
+      padding: 15px  0;
+    }
+
     i {
       color: #777777;
       font-size: 36px;
@@ -55,6 +65,11 @@
       font-size: 30px;
       font-weight: bold;
       padding: 25px 0 15px 0;
+
+      @include mobile {
+        font-size: 16px;
+        padding: 15px 0 10px 0;
+      }
     }
 
     .steps.first {
@@ -76,6 +91,10 @@
       height: 5px;
       display: block;
       margin: 10px auto;
+
+      @include mobile {
+        height: 3px;
+      }
     }
 
     p {

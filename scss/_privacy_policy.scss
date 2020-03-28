@@ -6,6 +6,10 @@
   align-items: center;
   z-index: 1;
 
+  @include mobile {
+    min-height: 250px;
+  }
+
   &::before {
     content: '';
     width: 100%;
@@ -47,6 +51,10 @@
     margin-right: 20px;
     opacity: 0.5;
     margin-top: 2px;
+
+    @include mobile {
+      margin-right: 10px;
+    }
   }
   
   .link {
@@ -58,55 +66,4 @@
     background: transparent !important;
   }
 
-  
-  /* === table part start === */
-  .use-table .heading { 
-    background: #2794d7;
-    border-radius: 10px;
-  }
-
-  .use-table .heading span {
-    font-size: 22px;
-    color: #fff;
-    font-weight: 700;
-    /* padding: .75rem; */
-  }
-
-  .use-table {
-    border: 3px solid #2794d7;
-    border-radius: 25px !important;
-    margin-bottom: 0;
-    overflow: hidden;
-    border-bottom: 0px solid transparent;
-    position: relative;
-    z-index: 1;
-  }
-
-  .use-table::before {
-    width: 3px;
-    height: 100%;
-    background: #2794d7;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-
-
-  .use-table .row {
-    -webkit-border-bottom-right-radius: 25px;
-    -webkit-border-bottom-left-radius: 25px;
-    -moz-border-radius-bottomright: 25px;
-    -moz-border-radius-bottomleft: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border: 3px solid #2794d7;
-    border-top: 3px solid transparent;
-    margin: 0 -3px;
-    padding: 15px 5px;
-  }
-
-  /* ===//end of table part === */
 }

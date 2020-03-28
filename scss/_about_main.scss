@@ -4,6 +4,10 @@
   position: relative;
   display: grid;
   align-items: center;
+
+  @include mobile {
+    min-height: 250px;
+  }
 }
 
 #About_banner{
@@ -48,6 +52,13 @@
 
 #our_goal{
   @include section(80px,null,null);
+  
+  @include  mobile {
+    padding: 40px 0;
+    iframe {
+      max-height: 250px;
+    }
+  }
   .goal_content{
     
     .goal_content_details {
