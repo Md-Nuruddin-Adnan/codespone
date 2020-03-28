@@ -274,6 +274,12 @@ img {
   place-items: center;
 }
 
+@media (min-width: 576px) and (max-width: 1199px) {
+  .banner {
+    height: auto;
+  }
+}
+
 @media (max-width: 575px) {
   .banner {
     padding: 40px 0;

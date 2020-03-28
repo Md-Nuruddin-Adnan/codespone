@@ -113,6 +113,10 @@
   display: grid;
   place-items: center;
 
+  @include medium_device {
+    height: auto;
+  }
+
   @include mobile {
     padding: 40px 0;
     height: 70vh;
@@ -733,7 +737,7 @@
   @include mobile {
     padding: 40px 0;
   }
-  
+
   .portable-form{
     max-width: 650px;
     margin: 0 auto;
