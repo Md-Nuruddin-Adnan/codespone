@@ -40,9 +40,9 @@ $(function(){
 
       //banner space adjust
       if(scrollValue >= 300){
-        $(".banner").addClass("top-margin");
+        $(".need_margin").addClass("top-margin");
       }else{
-        $(".banner").removeClass("top-margin");
+        $(".need_margin").removeClass("top-margin");
       }
   });
 

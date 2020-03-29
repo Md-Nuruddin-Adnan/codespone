@@ -448,7 +448,7 @@
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%);
+              transform: translate(-50%, -50%);
 
               i{
                 color: lighten($color: #000000, $amount: 100%);

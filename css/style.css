@@ -1650,8 +1650,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #preview .preview_box .preview_item .preview_box_img:hover .img-preview .prevew_icon_img i {

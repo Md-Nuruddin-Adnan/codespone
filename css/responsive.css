@@ -35,6 +35,10 @@
     top: 0px;
     padding: 0 10px;
   }
+
+  .top-margin {
+    margin-top: 70px;
+  }
  }
 
 /* Large devices (desktops and laptop) */
@@ -47,6 +51,7 @@
   .template.template_similar .container{
     max-width: 1140px;   
   }
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
