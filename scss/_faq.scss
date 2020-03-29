@@ -8,6 +8,10 @@
 
   @include mobile {
     min-height: 250px;
+    .s-heading span {
+      line-height: 1.4;
+    }
+
   }
 
   &::before {

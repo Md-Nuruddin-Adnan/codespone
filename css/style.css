@@ -137,7 +137,7 @@ img {
   -webkit-transition: background-color .1s linear;
   transition: background-color .1s linear;
   background-color: #6BA229;
-  padding: 11px 30px;
+  padding: 10px 30px;
   text-align: center;
 }
 
@@ -1291,19 +1291,31 @@ img {
   position: absolute;
   z-index: 999;
   top: 90px;
-  left: 0px;
+  left: 15px;
   width: 100%;
 }
 
 #search_banner .search_content_full .search_content_inner h1 {
   font-size: 38px;
-  font-family: fonts(secondary);
   margin-bottom: 8px;
+}
+
+@media (max-width: 575px) {
+  #search_banner .search_content_full .search_content_inner h1 {
+    font-size: 25px;
+  }
 }
 
 #search_banner .search_content_full .search_content_inner h5 {
   font-size: 22px;
   line-height: 34px;
+}
+
+@media (max-width: 575px) {
+  #search_banner .search_content_full .search_content_inner h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 #search_banner .search_content_full .search_content_inner .search_bar {
@@ -1324,6 +1336,12 @@ img {
 
 #search_banner .search_content_full .search_content_inner .search_bar #templete_search_form .input-group .input-group-prepend {
   position: relative;
+}
+
+@media (max-width: 575px) {
+  #search_banner .search_content_full .search_content_inner .search_bar #templete_search_form .input-group .input-group-prepend {
+    display: none;
+  }
 }
 
 #search_banner .search_content_full .search_content_inner .search_bar #templete_search_form .input-group .input-group-prepend::before {
@@ -1363,6 +1381,13 @@ img {
   padding: 12px 15px;
 }
 
+@media (max-width: 575px) {
+  #search_banner .search_content_full .search_content_inner .search_bar #templete_search_form .input-group input.form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+}
+
 #search_banner .search_content_full .search_content_inner .search_bar #templete_search_form .input-group .input-group-append button.btn-outline-secondary {
   border: none;
   color: #000;
@@ -1388,6 +1413,13 @@ img {
   margin-left: 20px;
 }
 
+@media (max-width: 575px) {
+  #search_banner .search_content_full .search_content_inner .search_bar .search_btn > a, #search_banner .search_content_full .search_content_inner .search_bar #footer-bg .search_btn > .p, #footer-bg #search_banner .search_content_full .search_content_inner .search_bar .search_btn > .p, #search_banner .search_content_full .search_content_inner .search_bar #footer-bg .search_btn > span, #footer-bg #search_banner .search_content_full .search_content_inner .search_bar .search_btn > span, #search_banner .search_content_full .search_content_inner .search_bar #our-blog .container .news_item .news_desc h3 .search_btn > a:hover {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+}
+
 .filter_btn {
   position: -webkit-sticky;
   position: sticky;
@@ -1404,6 +1436,13 @@ img {
   transition: all 0.2s linear;
   margin: 0 5px;
   font-size: 16px;
+}
+
+@media (max-width: 575px) {
+  .filter_btn .btn-outline {
+    font-size: 12px;
+    padding: .35rem .5rem;
+  }
 }
 
 .filter_btn .btn-outline.active, .filter_btn #generic_price_table .btn-outline.generic_content:hover, #generic_price_table .filter_btn .btn-outline.generic_content:hover, .filter_btn .btn-outline:hover {
@@ -1557,6 +1596,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media (max-width: 575px) {
+  #preview {
+    padding-top: 15px;
+  }
+}
+
 #preview .preview_box {
   background-color: #fafafa;
   color: #666666;
@@ -1692,13 +1737,15 @@ img {
   -webkit-box-sizing: border-box;
 }
 
+@media (max-width: 575px) {
+  #preview .item-bookmarking li span a span, #preview .item-bookmarking li span #footer-bg .p span, #footer-bg #preview .item-bookmarking li span .p span, #preview .item-bookmarking li span #footer-bg span span, #footer-bg #preview .item-bookmarking li span span span {
+    font-size: 12px;
+  }
+}
+
 #preview .item-bookmarking li span a span:hover, #preview .item-bookmarking li span #footer-bg .p span:hover, #footer-bg #preview .item-bookmarking li span .p span:hover, #preview .item-bookmarking li span #footer-bg span span:hover, #footer-bg #preview .item-bookmarking li span span span:hover {
   background-color: rgba(82, 79, 79, 0.459);
   color: #fff;
-}
-
-#preview .item-bookmarking li span a span:first-child, #preview .item-bookmarking li span #footer-bg .p span:first-child, #footer-bg #preview .item-bookmarking li span .p span:first-child, #preview .item-bookmarking li span #footer-bg span span:first-child, #footer-bg #preview .item-bookmarking li span span span:first-child {
-  margin-right: 15px;
 }
 
 #preview .authors_details {
@@ -1713,11 +1760,25 @@ img {
   line-height: 30px;
 }
 
+@media (max-width: 575px) {
+  #preview .authors_details h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 #preview .authors_details .author_by .author_img img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+@media (max-width: 575px) {
+  #preview .authors_details .author_by .author_img img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 #preview .authors_details .author_by .by {
@@ -1963,6 +2024,13 @@ img {
   display: block;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+@media (max-width: 575px) {
+  #Keyword .webtags li a, #Keyword .webtags li #footer-bg .p, #footer-bg #Keyword .webtags li .p, #Keyword .webtags li #footer-bg span, #footer-bg #Keyword .webtags li span {
+    font-size: 12px;
+    padding: 5px .5rem;
+  }
 }
 
 #Keyword .webtags li a:hover, #Keyword .webtags li #footer-bg .p:hover, #footer-bg #Keyword .webtags li .p:hover, #Keyword .webtags li #footer-bg span:hover, #footer-bg #Keyword .webtags li span:hover {
@@ -2686,6 +2754,9 @@ img {
 @media (max-width: 575px) {
   #Faq_banner {
     min-height: 250px;
+  }
+  #Faq_banner .s-heading span {
+    line-height: 1.4;
   }
 }
 
