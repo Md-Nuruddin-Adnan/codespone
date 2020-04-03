@@ -128,6 +128,11 @@ img {
   margin-bottom: 20px;
 }
 
+#page-content {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .primary_btn {
   border: none;
   border-radius: 4px;
@@ -253,6 +258,114 @@ img {
   opacity: 0.8;
 }
 
+.mobile-header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.mobile-header .logo {
+  max-width: 180px;
+}
+
+.mobile-header .openbtn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  background: #6BA229;
+  border-radius: 50%;
+  padding-left: 8px;
+}
+
+#sideNav {
+  background: #181a2d;
+  -webkit-box-shadow: 0.15rem 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0.15rem 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: #fff;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sideNav .closebtn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  background: #6BA229;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  margin: 20px 20px;
+}
+
+#sideNav nav ul li {
+  padding: 10px 20px;
+  border-left: 5px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#sideNav nav ul li a, #sideNav nav ul li #footer-bg .p, #footer-bg #sideNav nav ul li .p, #sideNav nav ul li #footer-bg span, #footer-bg #sideNav nav ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222;
+  font-size: .9rem;
+}
+
+#sideNav nav ul li a i, #sideNav nav ul li #footer-bg .p i, #footer-bg #sideNav nav ul li .p i, #sideNav nav ul li #footer-bg span i, #footer-bg #sideNav nav ul li span i {
+  padding-right: 15px;
+  color: #6BA229;
+  font-size: 1rem;
+}
+
+#sideNav nav ul li.active, #sideNav nav ul #generic_price_table li.generic_content:hover, #generic_price_table #sideNav nav ul li.generic_content:hover, #sideNav nav ul li:hover {
+  border-left: 5px solid #6BA229;
+  background: rgba(107, 162, 41, 0.2);
+}
+
+#sideNav .s-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+#sideNav .s-link a, #sideNav .s-link #footer-bg .p, #footer-bg #sideNav .s-link .p, #sideNav .s-link #footer-bg span, #footer-bg #sideNav .s-link span {
+  width: 40px;
+  height: 40px;
+  background: #6BA229;
+  color: #fff;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+  line-height: 40px;
+}
+
+#sideNav .copyright {
+  text-align: center;
+  padding: 0 20px 30px 20px;
+}
+
 .header.header.position-fixed .navbar-light .navbar-nav .nav-link {
   color: #3E3F3D;
 }
@@ -322,7 +435,7 @@ img {
 
 @media (max-width: 575px) {
   #service {
-    padding: 40px 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -922,6 +1035,12 @@ img {
   padding-bottom: 30px;
 }
 
+@media (max-width: 575px) {
+  #footer-bg .top-footer {
+    padding-bottom: 0;
+  }
+}
+
 #footer-bg a, #footer-bg .p, #footer-bg span {
   color: #b3b3b3;
 }
@@ -985,11 +1104,18 @@ img {
 #footer-bg .title-content .social-links li a, #footer-bg .title-content .social-links li .p, #footer-bg .title-content .social-links li span {
   font-size: 20px;
   color: #fff;
-  margin-right: 15px;
+  display: block;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background: #6BA229;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
 }
 
 #footer-bg .title-content .social-links li a:hover, #footer-bg .title-content .social-links li .p:hover, #footer-bg .title-content .social-links li span:hover {
-  color: #6BA229;
+  opacity: 0.8;
 }
 
 #footer-bg .bottom-footer {
@@ -1066,7 +1192,7 @@ img {
 
 @media (max-width: 575px) {
   #our_goal {
-    padding: 40px 0;
+    padding: 40px 0 !important;
   }
   #our_goal iframe {
     max-height: 250px;
@@ -1423,7 +1549,7 @@ img {
 .filter_btn {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
+  top: 50px;
   z-index: 990;
   background: #fff;
   padding: 30px 0 20px 0;

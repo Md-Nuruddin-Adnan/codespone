@@ -5,8 +5,10 @@
 }
 
 /* Small devices (landscape phones upto 767px) */
-@media (max-width: 767px) {
-  
+@media (max-width: 991px) {
+  .need_margin {
+    margin-top: 60px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */

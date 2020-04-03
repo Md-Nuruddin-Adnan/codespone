@@ -8,6 +8,7 @@
   <link rel='shortcut icon' href='images/logo' type='image/x-icon'>
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/simple-line-icons.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
@@ -16,11 +17,13 @@
   <script src="js/parallax.js"></script>
 </head>
 <body>
+<!-- === page content start === -->
+<div id="page-content">
 
-<!-- === header section start === -->
-<header class="header shadow-sm w-100">
+<!-- === Desktop header section start === -->
+<header class="d-lg-block d-none header shadow-sm w-100">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="images/logo.png" alt="codespone logo" class="img-fluid dark-logo d-none">
       <img src="images/logo-white.png" alt="codespone logo" class="img-fluid white-logo">
     </a>
@@ -37,13 +40,10 @@
           <a class="nav-link" href="about.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="index.html#service">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="template.html">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="blog.html">Blog</a>
@@ -61,7 +61,71 @@
   </nav>
 
 </header>
-<!-- ===//end of header section === -->
+<!-- ===//end of Desktop header section === -->
+
+
+<!--=== Mobile header start ===-->
+
+<div id="sideNav">
+  <div class="d-flex justify-content-between align-items-center">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-reply"></i></a>
+
+    <a href="#" class="btn login-btn">Login</a>
+  </div>
+  <nav>
+    <ul class="p-0">
+      <li class="active">
+        <a href="index.html"><i class="icon-home icons"></i> Home</a>
+      </li>
+      <li>
+        <a href="about.html"><i class="icon-user-following icons"></i> About Us</a>
+      </li>
+      <li>
+        <a href="index.html#service"><i class="icon-diamond icons"></i>Service</a>
+      </li>
+      <li>
+        <a href="template.html"><i class="icon-grid icons"></i>Free Templates</a>
+      </li>
+      <li>
+        <a href="blog.html"><i class="icon-book-open icons"></i>Blog</a>
+      </li>
+      <li>
+        <a href="contact.html"><i class="icon-bubbles icons"></i>Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="s-link">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <p class="copyright">Copyright © 2020 Codespone Company All rights reserved.</p>
+
+</div>
+
+<header class="d-lg-none d-block mobile-header shadow-sm">
+  <div class="navbar">
+    <a href="index.html">
+      <img src="images/logo.png" class="logo" alt="logo" class="img-fluid">
+    </a>
+    <button class="openbtn btn" onclick="openNav()"><i class="icon-list icons"></i></button> 
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sideNav").style.width = "280px";
+      document.getElementById("page-content").style.marginLeft = "295px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sideNav").style.width = "0";
+      document.getElementById("page-content").style.marginLeft= "0";
+    }
+  </script>
+  
+</header>
+<!--=== Mobile header end ===-->
 
 
 <!-- === banner section start === -->
@@ -275,7 +339,7 @@
 
       </div>
     </div>
-  </div>
+  
 </section>
 <!-- ===//end of About us section === -->
 
@@ -668,7 +732,7 @@
       </div>
     </div>
     </div>
-  </div>
+  
 </section>
 <!-- ===//end of counter section === -->
 
@@ -769,18 +833,17 @@
             <li><a href="#" class="links">Code of Conduct</a></li>
             <li><a href="#" class="links">Fees and Charges</a></li>
           </ul>
-          <ul class="social-links d-flex">
+          <ul class="social-links d-flex justify-content-md-start justify-content-center mt-md-2 mt-4">
             <li><a href="#" class="s-links"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#" class="s-links"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#" class="s-links"><i class="fab fa-youtube"></i></a></li>
             <li><a href="#" class="s-links"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" class="s-links"><i class="fas fa-video"></i></a></li>
+            <li><a href="#" class="s-links"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
     <!-- Bootom Footer -->
-    <div class="row mt-5 bottom-footer">
+    <div class="row mt-md-5 mt-4 bottom-footer">
       <div class="col-md-3">
         <div class="reg-content d-flex">
           <div class="reg-number mr-2">44583</div>
@@ -809,6 +872,8 @@
 
 
 
+</div>
+<!-- ===//end of page content === -->
 
 
 <script src="js/jquery-3.4.1.min.js"></script>

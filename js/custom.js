@@ -1,6 +1,7 @@
 $(function(){
   'use strict'; 
-  //wow jquery plugins
+
+ //wow jquery plugins
   new WOW().init();
   
   //back to top button

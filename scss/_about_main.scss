@@ -54,7 +54,7 @@
   @include section(80px,null,null);
   
   @include  mobile {
-    padding: 40px 0;
+    padding: 40px 0!important;
     iframe {
       max-height: 250px;
     }
