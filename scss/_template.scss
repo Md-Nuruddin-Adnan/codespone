@@ -204,10 +204,14 @@
 
 %filter_btn{
   position: sticky;
-  top: 50px;
+  top: 60px;
   z-index: 990;
   background: #fff;
   padding: 30px 0 20px 0;
+
+  @include mobile {
+    top: 50px;
+  }
 
   .btn-outline {
     border: 1px solid rgba(0, 0, 0, .1);

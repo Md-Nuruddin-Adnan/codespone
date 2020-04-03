@@ -1552,10 +1552,16 @@ img {
 .filter_btn {
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 60px;
   z-index: 990;
   background: #fff;
   padding: 30px 0 20px 0;
+}
+
+@media (max-width: 575px) {
+  .filter_btn {
+    top: 50px;
+  }
 }
 
 .filter_btn .btn-outline {
