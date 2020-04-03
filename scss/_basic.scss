@@ -23,8 +23,9 @@ a, a:hover {
   text-decoration: none;
 }
 
-.btn.focus {
+.btn:focus {
   outline: 0;
+  box-shadow: none;
 }
 
 body {
