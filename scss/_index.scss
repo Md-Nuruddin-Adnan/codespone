@@ -125,7 +125,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9998;
+  z-index: 99999;
   transition: 0.5s;
 
   .closebtn {
@@ -133,8 +133,8 @@
     height: 40px;
     font-size: 20px;
     line-height: 40px;
-    color: #fff;
-    background: color(primary);
+    color: #d35400;
+    background: #ebf0f8;
     border-radius: 50%;
     text-align: center;
     display: block;
@@ -151,6 +151,7 @@
       align-items: center;
       color: #222;
       font-size: .9rem;
+      font-weight: 500;
 
       i {
         padding-right: 15px;

@@ -17,8 +17,6 @@
   <script src="js/parallax.js"></script>
 </head>
 <body>
-<!-- === page content start === -->
-<div id="page-content">
 
 <!-- === Desktop header section start === -->
 <header class="d-lg-block d-none header shadow-sm w-100">
@@ -73,23 +71,23 @@
     <a href="#" class="btn login-btn">Login</a>
   </div>
   <nav>
-    <ul class="p-0">
-      <li class="active">
+    <ul class="p-0" id="mainSideNav">
+      <li class="active nav-li">
         <a href="index.html"><i class="icon-home icons"></i> Home</a>
       </li>
-      <li>
+      <li class="nav-li">
         <a href="about.html"><i class="icon-user-following icons"></i> About Us</a>
       </li>
-      <li>
+      <li class="nav-li">
         <a href="index.html#service"><i class="icon-diamond icons"></i>Service</a>
       </li>
-      <li>
+      <li class="nav-li">
         <a href="template.html"><i class="icon-grid icons"></i>Free Templates</a>
       </li>
-      <li>
+      <li class="nav-li">
         <a href="blog.html"><i class="icon-book-open icons"></i>Blog</a>
       </li>
-      <li>
+      <li class="nav-li">
         <a href="contact.html"><i class="icon-bubbles icons"></i>Contact</a>
       </li>
     </ul>
@@ -114,13 +112,11 @@
 
   <script>
     function openNav() {
-      document.getElementById("sideNav").style.width = "280px";
-      document.getElementById("page-content").style.marginLeft = "295px";
+      document.getElementById("sideNav").style.width = "100%";
     }
     
     function closeNav() {
       document.getElementById("sideNav").style.width = "0";
-      document.getElementById("page-content").style.marginLeft= "0";
     }
   </script>
   
@@ -869,11 +865,6 @@
 
 
 
-
-
-
-</div>
-<!-- ===//end of page content === -->
 
 
 <script src="js/jquery-3.4.1.min.js"></script>

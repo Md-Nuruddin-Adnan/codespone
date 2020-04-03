@@ -17,115 +17,112 @@
   <script src="js/parallax.js"></script>
 </head>
 <body>
-<!-- === page content start === -->
-<div id="page-content">
 
-  <!-- === Desktop header section start === -->
-  <header class="d-lg-block d-none header shadow-sm w-100">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="codespone logo" class="img-fluid dark-logo d-none">
-        <img src="images/logo-white.png" alt="codespone logo" class="img-fluid white-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="template.html">Templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="s-link">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-    </nav>
+
+<!-- === Desktop header section start === -->
+<header class="d-lg-block d-none header shadow-sm w-100">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="codespone logo" class="img-fluid dark-logo d-none">
+      <img src="images/logo-white.png" alt="codespone logo" class="img-fluid white-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   
-  </header>
-  <!-- ===//end of Desktop header section === -->
-  
-  
-  <!--=== Mobile header start ===-->
-  
-  <div id="sideNav">
-    <div class="d-flex justify-content-between align-items-center">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-reply"></i></a>
-  
-      <a href="#" class="btn login-btn">Login</a>
-    </div>
-    <nav>
-      <ul class="p-0">
-        <li class="active">
-          <a href="index.html"><i class="icon-home icons"></i> Home</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li>
-          <a href="about.html"><i class="icon-user-following icons"></i> About Us</a>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
         </li>
-        <li>
-          <a href="index.html#service"><i class="icon-diamond icons"></i>Service</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#service">Services</a>
         </li>
-        <li>
-          <a href="template.html"><i class="icon-grid icons"></i>Free Templates</a>
+        <li class="nav-item">
+          <a class="nav-link" href="template.html">Templates</a>
         </li>
-        <li>
-          <a href="blog.html"><i class="icon-book-open icons"></i>Blog</a>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
         </li>
-        <li>
-          <a href="contact.html"><i class="icon-bubbles icons"></i>Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
-    <div class="s-link">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+      <div class="s-link">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
-  
-    <p class="copyright">Copyright © 2020 Codespone Company All rights reserved.</p>
-  
+  </nav>
+
+</header>
+<!-- ===//end of Desktop header section === -->
+
+
+<!--=== Mobile header start ===-->
+
+<div id="sideNav">
+  <div class="d-flex justify-content-between align-items-center">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-reply"></i></a>
+
+    <a href="#" class="btn login-btn">Login</a>
   </div>
-  
-  <header class="d-lg-none d-block mobile-header shadow-sm">
-    <div class="navbar">
-      <a href="index.html">
-        <img src="images/logo.png" class="logo" alt="logo" class="img-fluid">
-      </a>
-      <button class="openbtn btn" onclick="openNav()"><i class="icon-list icons"></i></button> 
-    </div>
-  
-    <script>
-      function openNav() {
-        document.getElementById("sideNav").style.width = "280px";
-        document.getElementById("page-content").style.marginLeft = "295px";
-      }
-      
-      function closeNav() {
-        document.getElementById("sideNav").style.width = "0";
-        document.getElementById("page-content").style.marginLeft= "0";
-      }
-    </script>
+  <nav>
+    <ul class="p-0" id="mainSideNav">
+      <li class="active nav-li">
+        <a href="index.html"><i class="icon-home icons"></i> Home</a>
+      </li>
+      <li class="nav-li">
+        <a href="about.html"><i class="icon-user-following icons"></i> About Us</a>
+      </li>
+      <li class="nav-li">
+        <a href="index.html#service"><i class="icon-diamond icons"></i>Service</a>
+      </li>
+      <li class="nav-li">
+        <a href="template.html"><i class="icon-grid icons"></i>Free Templates</a>
+      </li>
+      <li class="nav-li">
+        <a href="blog.html"><i class="icon-book-open icons"></i>Blog</a>
+      </li>
+      <li class="nav-li">
+        <a href="contact.html"><i class="icon-bubbles icons"></i>Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="s-link">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <p class="copyright">Copyright © 2020 Codespone Company All rights reserved.</p>
+
+</div>
+
+<header class="d-lg-none d-block mobile-header shadow-sm">
+  <div class="navbar">
+    <a href="index.html">
+      <img src="images/logo.png" class="logo" alt="logo" class="img-fluid">
+    </a>
+    <button class="openbtn btn" onclick="openNav()"><i class="icon-list icons"></i></button> 
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sideNav").style.width = "100%";
+    }
     
-  </header>
-  <!--=== Mobile header end ===-->
+    function closeNav() {
+      document.getElementById("sideNav").style.width = "0";
+    }
+  </script>
+  
+</header>
+<!--=== Mobile header end ===-->
 
 <!-- === Service Banner section start === -->
 <section id="Service_banner" class="need_margin">
@@ -425,9 +422,6 @@
 </footer>
 <!-- ===//end of footer section === -->
 
-
-</div>
-<!-- ===//end of page content === -->
 
 
 

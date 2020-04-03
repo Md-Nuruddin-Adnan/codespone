@@ -3,6 +3,18 @@ $(function(){
 
  //wow jquery plugins
   new WOW().init();
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("mainSideNav");
+var btns = header.getElementsByClassName("nav-li");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
   
   //back to top button
   $(".top-btn").click(function(){

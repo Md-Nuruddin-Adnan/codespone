@@ -292,7 +292,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9998;
+  z-index: 99999;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -302,8 +302,8 @@ img {
   height: 40px;
   font-size: 20px;
   line-height: 40px;
-  color: #fff;
-  background: #6BA229;
+  color: #d35400;
+  background: #ebf0f8;
   border-radius: 50%;
   text-align: center;
   display: block;
@@ -326,6 +326,7 @@ img {
           align-items: center;
   color: #222;
   font-size: .9rem;
+  font-weight: 500;
 }
 
 #sideNav nav ul li a i, #sideNav nav ul li #footer-bg .p i, #footer-bg #sideNav nav ul li .p i, #sideNav nav ul li #footer-bg span i, #footer-bg #sideNav nav ul li span i {
