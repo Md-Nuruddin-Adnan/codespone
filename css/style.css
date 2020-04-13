@@ -260,6 +260,14 @@ img {
   opacity: 0.8;
 }
 
+.header.header.position-fixed .navbar-light .navbar-nav .nav-link {
+  color: #3E3F3D;
+}
+
+.header.header.position-fixed .navbar-light .navbar-nav .nav-link:hover {
+  color: #82b541;
+}
+
 .mobile-header {
   background: #fff;
   position: fixed;
@@ -284,7 +292,6 @@ img {
 }
 
 #sideNav {
-  background: #181a2d;
   -webkit-box-shadow: 0.15rem 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0.15rem 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   background: #fff;
@@ -367,14 +374,6 @@ img {
 #sideNav .copyright {
   text-align: center;
   padding: 0 20px 30px 20px;
-}
-
-.header.header.position-fixed .navbar-light .navbar-nav .nav-link {
-  color: #3E3F3D;
-}
-
-.header.header.position-fixed .navbar-light .navbar-nav .nav-link:hover {
-  color: #82b541;
 }
 
 /* === banner section start === */
@@ -897,7 +896,7 @@ img {
 #counter {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #181A2D;
+  background-color: #fdfaf6;
 }
 
 @media (max-width: 575px) {
@@ -922,14 +921,31 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 25px;
-  border: 3px solid #6BA229;
-  background: #181a2d;
+  background: #fff;
+  border: 2px solid transparent;
+  color: #181a2d;
 }
 
 #counter .counter-box p.count {
   font-size: 35px;
   font-weight: bold;
   padding: 25px 0 15px 0;
+}
+
+#counter .counter-box p.count.first {
+  color: #15bcec;
+}
+
+#counter .counter-box p.count.second {
+  color: #f5a416;
+}
+
+#counter .counter-box p.count.third {
+  color: #00c99c;
+}
+
+#counter .counter-box p.count.fourth {
+  color: #f12699;
 }
 
 @media (max-width: 575px) {
@@ -941,11 +957,12 @@ img {
 
 #counter .counter-box i {
   font-size: 36px;
+  color: #6BA229;
 }
 
 #counter .counter-box span {
   width: 80px;
-  background: rgba(255, 255, 255, 0.8);
+  background: #6BA229;
   height: 5px;
   display: block;
   margin: 10px auto;
@@ -1139,53 +1156,20 @@ img {
 /*// End of Home css start here */
 /* About Section start here */
 #About_banner {
-  background: url("../images/About/bg_1.jpg") center center/cover no-repeat;
-  min-height: 350px;
-  position: relative;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("../images/About/bg_1.jpg") center center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
 }
 
 @media (max-width: 575px) {
   #About_banner {
     min-height: 250px;
   }
-}
-
-#counter.abt-counter {
-  background: #FDFAF6;
-}
-
-#counter.abt-counter .counter-box {
-  background: #fff;
-  border: 2px solid transparent;
-}
-
-#counter.abt-counter .counter-box i, #counter.abt-counter .counter-box p {
-  color: #777;
-}
-
-#counter.abt-counter .counter-box p.count.first {
-  color: #15bcec;
-}
-
-#counter.abt-counter .counter-box p.count.second {
-  color: #f5a416;
-}
-
-#counter.abt-counter .counter-box p.count.third {
-  color: #00c99c;
-}
-
-#counter.abt-counter .counter-box p.count.fourth {
-  color: #f12699;
-}
-
-#counter.abt-counter .counter-box span {
-  background: #777;
 }
 
 #our_goal {

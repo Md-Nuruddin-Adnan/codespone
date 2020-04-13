@@ -91,6 +91,15 @@
   @extend %hed;
 }
 
+
+.header.header.position-fixed .navbar-light .navbar-nav .nav-link {
+  color: color(nav_link_2);
+}
+
+.header.header.position-fixed .navbar-light .navbar-nav .nav-link:hover {
+  color: color(nav_link_primary);
+}
+
 // Mobile header start
 .mobile-header {
   background: #fff;
@@ -192,13 +201,7 @@
 }
 // Mobile header end
 
-.header.header.position-fixed .navbar-light .navbar-nav .nav-link {
-  color: color(nav_link_2);
-}
 
-.header.header.position-fixed .navbar-light .navbar-nav .nav-link:hover {
-  color: color(nav_link_primary);
-}
 
 // Banner 
 
@@ -272,10 +275,6 @@
 #partner{
   @include section(30px,null,null);
 }
-
-
-
-
 
 // Service
 %box{
@@ -624,7 +623,6 @@
   }
 }
 
-
 #generic_price_table{
 	@extend %price-table;
 	
@@ -667,9 +665,6 @@
 
 }
   
-  
-
-
 // Happy customer end
 
 // Blogs start 
@@ -768,7 +763,7 @@
 
 // Counter
 %counter{
-  @include section(80px,null,color(quaternary_bg));
+  @include section(80px,null,color(counter_bg));
 
   @include mobile {
     padding: 40px 0;
@@ -783,15 +778,26 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 25px;
-    // background: transparent !important;
-    border: 3px solid color(primary);
-    background: #181a2d;
-
+    background: #fff;
+    border: 2px solid transparent;
+    color: color(text_dark);
     p.count{
       font-size: 35px;
       font-weight: bold;
       padding: 25px 0 15px 0;
+      &.first{
+        color: #15bcec
+      }
+      &.second {
+        color: #f5a416;
+      }
+      &.third{
+        color: #00c99c;
+      }
 
+      &.fourth{
+        color: #f12699;
+      }
       @include mobile {
         font-size: 25px;
         padding: 15px 0;
@@ -799,10 +805,11 @@
     }
     i {
       font-size: 36px;
+      color: color(primary);
     }
     span{
       width: 80px;
-      background: rgba(255, 255, 255, 0.8);
+      background: color(primary);
       height: 5px;
       display: block;
       margin: 10px auto;
