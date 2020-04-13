@@ -1,9 +1,10 @@
+
+
 %abt_bnr{
+  @include grid(grid,center,null);
   background: url("../images/About/bg_1.jpg") center center/cover no-repeat;
   min-height: 350px;
   position: relative;
-  display: grid;
-  align-items: center;
 
   @include mobile {
     min-height: 250px;
@@ -14,41 +15,6 @@
   @extend %abt_bnr;
 }
 
-  #counter {
-    
-    &.abt-counter{
-      background: #FDFAF6;
-
-
-    .counter-box{
-      background: #fff;
-      border: 2px solid transparent;
-
-      i, p {
-        color: #777;
-      }
-  
-      p.count.first {
-        color: #15bcec;
-      }
-      p.count.second {
-        color: #f5a416;
-      }
-      p.count.third {
-        color: #00c99c;
-      }
-      p.count.fourth {
-        color: #f12699;
-      }
-      
-      span {
-        background: #777;
-      }
-
-    }  
-  } 
-  
-}
 
 #our_goal{
   @include section(80px,null,null);
